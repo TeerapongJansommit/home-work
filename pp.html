@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คำนวณค่าน้ำ</title>
+    <link rel="stylesheet" href="pp.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h2 style="text-align: center;">คำนวณค่าน้ำประปา</h2>
+        <div class="input-group">
+            <div class="input-field">
+                <label for="waterUsage">ปริมาณน้ำที่ใช้ </label>
+                <input type="number" id="waterUsage" min="0" step="0.01">
+            </div>
+            <div class="input-field">
+                <label for="customerType">ประเภทผู้ใช้น้ำ</label>
+                <select id="customerType">
+                    <option value="residential">ที่อยู่อาศัย</option>
+                    <option value="business">ธุรกิจ</option>
+                </select>
+            </div>
+            <div class="input-field">
+                <label for="meterSize">ขนาดมาตรวัดน้ำ</label>
+                <select id="meterSize">
+                    <option value="0.5">½ นิ้ว</option>
+                    <option value="0.75">¾ นิ้ว</option>
+                    <option value="1">1 นิ้ว</option>
+                    <option value="1.5">1 ½ นิ้ว</option>
+                    <option value="2">2 นิ้ว</option>
+                    <option value="3">3 นิ้ว</option>
+                    <option value="4">4 นิ้ว</option>
+                    <option value="6">6 นิ้ว</option>
+                    <option value="8">8 นิ้ว</option>
+                    <option value="12">12 นิ้ว</option>
+                    <option value="16">16 นิ้ว</option>
+                </select>
+            </div>
+        </div>
+        <button id="calculateBtn">คำนวณ</button>
+        <div class="result">
+            <h3>ค่าน้ำประปารวม</h3>
+            <p id="totalAmount">0.00 บาท</p>
+        </div>
+    </div>
+    <script src="pp.js"></script>
+</body>
+</html>

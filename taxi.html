@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taxi Fare Calculator</title>
+  <link rel="stylesheet" href="taxi.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h2>Taxi Fare Calculator</h2>
+      <label for="distance">ระยะทาง (กิโลเมตร):</label>
+      <input type="number" id="distance" name="distance" placeholder="กรอกระยะทาง" oninput="changeName()">
+      
+      <label for="traffic">เวลารถติด (นาที):</label>
+      <input type="number" id="traffic" name="traffic" placeholder="กรอกเวลารถติด" oninput="changeName()">
+      
+      <button onclick="calculateFare()">คำนวณราคา</button>
+    </div>
+    <div class="result-container">
+      <h3>ผลลัพธ์:</h3>
+      <p id="result">กรอกข้อมูลเพื่อคำนวณราคา</p>
+    </div>
+  </div>
+  <script src="taxi.js"></script>
+</body>
+</html>
